@@ -1,0 +1,143 @@
+/* Estilo general del cuerpo de la página */
+body {
+    height: 6000px;
+    font-family: sans-serif; /* Define la fuente principal del texto */
+    margin: 1px; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background-color: #ee810530; /* Establece el fondo en negro */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra externa sutil */
+}
+
+
+/* Contenedor principal para organizar las tarjetas */
+.container {
+    width: 90%;
+    display: flex; /* Usa un diseño de flexbox para las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples filas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 40px; /* Agrega espacio uniforme entre las tarjetas */
+    padding: 400px; /* Espaciado interno alrededor del contenedor */
+    margin: 1px;
+}
+
+/* Estilo para las tarjetas tipo 1 (info) */
+.info {
+    position: center; /* Posiciona elementos secundarios dentro de la tarjeta */
+    background-color: #0c0a0a; /* Fondo  para la tarjeta */
+    border-radius: 54px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra ligera */
+    overflow: hidden; /* Oculta cualquier contenido que exceda los bordes */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animación suave al interactuar */
+}
+
+.info:hover {
+    transform: scale(1.03); /* Aumenta ligeramente el tamaño al pasar el ratón */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Intensifica la sombra al pasar el ratón */
+}
+
+/* Imagen dentro de la tarjeta tipo 1 */
+.image {
+    width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+    height: 600px; /* Mantiene la proporción original de la imagen */
+    border-bottom: 9px solid #09090a; /* Línea debajo de la imagen */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre la imagen */
+}
+
+/* Contenido superpuesto en las tarjetas tipo 1 al pasar el ratón */
+.menu-content {
+    display: none; /* Oculta el contenido por defecto */
+    position: absolute; /* Posiciona el contenido dentro de la tarjeta */
+    top: 0; /* Se alinea en la parte superior */
+    left: 0; /* Se alinea en el borde izquierdo */
+    right: 0; /* Se alinea en el borde derecho */
+    bottom: 10px; /* Se alinea en la parte inferior */
+    padding: 10px; /* Espaciado interno */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    transition: opacity 0.3s; /* Transición suave de opacidad */
+    opacity: 0; /* Inicia como completamente invisible */
+    display: flex; /* Diseño flexible para alinear el contenido */
+    flex-direction: column; /* Organiza elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.info:hover .menu-content {
+    opacity: 1; /* Hace visible el contenido al pasar el ratón */
+    display: flex; /* Asegura que se mantenga el diseño flexible */
+}
+
+/* Texto dentro del contenido superpuesto */
+.menu-content h3, .menu-content p {
+    margin: 0; /* Elimina márgenes predeterminados */
+    color: #fff; /* Texto en blanco para contraste */
+}
+
+/* Título superpuesto */
+.menu-content h3 {
+    font-size: 4em; /* Tamaño de fuente grande */
+    margin-bottom: 6px; /* Espaciado inferior */
+}
+
+/* Descripción superpuesta */
+.menu-content p {
+    font-size: 2.2em; /* Tamaño de fuente estándar */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilo para las tarjetas tipo 2 (card) */
+.card {
+    width: 1800px; /* Ancho fijo de la tarjeta */
+    background: #0d0c0c8e; /* Fondo negro semitransparente */
+    border-radius: 80px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido excedente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    margin: 6px; /* Espaciado alrededor de la tarjeta */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Imagen dentro de la tarjeta tipo 2 */
+.card img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+ 
+}
+
+/* Contenido textual dentro de las tarjetas tipo 2 */
+.card-content {
+    padding: 55px; /* Espaciado interno */
+}
+
+/* Título dentro de las tarjetas tipo 2 */
+.card-content h3 {
+    margin: 0 0 50px; /* Espaciado inferior */
+    font-size: 5rem; /* Tamaño de fuente grande */
+    color: #ee8105; /* Color naranja */
+}
+
+/* Descripción dentro de las tarjetas tipo 2 */
+.card-content p {
+    margin: 0; /* Elimina márgenes predeterminados */
+    color: #fcf4f4d1; /* Texto claro */
+    font-size: 2.9rem; /* Tamaño de fuente moderado */
+    line-height: 1.7; /* Espaciado entre líneas */
+}
+
+/* Enlace dentro de las tarjetas tipo 2 */
+.card-content a {
+    display: inline-block; /* Se comporta como un bloque en línea */
+    margin-top: 10px; /* Espaciado superior */
+    text-decoration: none; /* Elimina subrayado */
+    color: #874d05; /* Color marrón */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s; /* Transición suave en el color */
+    font-size: 2.6rem;
+}
+
+.card-content a:hover {
+    color: #ee8105; /* Cambia a naranja al pasar el ratón */
+}
+

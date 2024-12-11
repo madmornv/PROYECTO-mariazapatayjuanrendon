@@ -1,0 +1,66 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./imagenes/fondo.jpg'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    color: white;
+}
+
+
+.container {
+    text-align: center;
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.801); 
+    border-radius: 70px;
+    width: 2500px; 
+    height: 1560px;
+}
+
+
+.title {
+    font-size: 130px;
+    margin-bottom: 140px; 
+}
+
+
+.form-item {
+    margin: 85px 0;
+    padding:60px;
+    font-size: 80px;
+    width: 90%; 
+    border-radius: 50px;
+    border: 3px solid #ae8888;
+    background-color: #0c0c0c5a;
+    color: white;
+}
+
+
+.form-item:hover {
+    background-color: #1c1919e3; 
+    border-color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #320533df;
+    border: none;
+    color: white;
+    font-size: 60px;
+    padding: 70px 120px;
+    border-radius: 20px;
+    width: 100%; 
+}
+
+input[type="submit"]:hover {
+    background-color: #581358;
+}
+

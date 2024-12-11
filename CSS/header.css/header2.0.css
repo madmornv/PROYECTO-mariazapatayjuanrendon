@@ -1,0 +1,119 @@
+/* Estilos básicos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 130px;
+    color: black;
+} 
+
+.logo{
+    margin-right: 40px; /*añade la margen a la derecha del logo para separarlo de otros elementos del contenedor*/
+}
+
+/* Logo imagen */
+.logo img {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 100%;
+}
+
+/* Estilos para el contenedor*/
+ .contenedor
+ {
+    align-items: center;
+    display:flex;
+    flex-direction: column; /*distribuye los elementos en columna*/
+    justify-content: 380px; /*distribuye el espacio entre los elementos*/
+    width: 100%;
+    max-width: 50px;
+    margin: 400px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px
+    rgba( 0, 0, 0.1);
+    gap: 20%; /*agrega los eapcios entre los elementos dentro del cont*/
+}
+
+.logo:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Título */
+header h1 {
+    font-size: 2em;
+    color: #6c4848;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin: 100px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: rgba(11, 10, 10, 0.982);
+    text-decoration: none;
+    font-size: 7em;
+    position:relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Barra animada en hover */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 8px;
+    background-color:#050404;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* La barra se extiende al ancho completo del enlace */
+}
+
+nav ul li a:hover {
+    color:rgb(94, 53, 12); /* Cambia el color del texto al pasar el ratón */
+}
+ 
+/* Estilo para la barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 4em;
+    border: 6px solid #0c0707;
+    border-radius: 100px;
+    outline: none;
+    width: 600px;
+    height:70px ;
+}
+
+.search-bar button {
+    padding: 10px;
+    font-size: 5rem;
+    background-color: #504f4f;
+    color: rgba(10, 8, 8, 0.425);
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #8b5326;
+}

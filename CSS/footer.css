@@ -7,11 +7,13 @@
     text-decoration: none;
 }
 
+
 /* Estilo del footer */
 footer {
     width: 100%;
-    padding: 10px 500px; /* Ajusta el padding a un valor más razonable */
-    background-image: url(../imagenes/hongo_arbol.jpg); /* Imagen de fondo */
+    padding: 10px 300px; /* Ajusta el padding a un valor más razonable */
+    background-color:rgba(18, 17, 17, 0.696) ; 
+    background-image: url('../img..footer/fondo.jpg'); /* Ruta de la imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,7 +52,7 @@ footer {
 
 .box__footer a {
     margin-top: 15px;
-    color:rgb(163, 154, 145);
+    color:rgb(29, 25, 19);
     font-size: 79px;
     text-align: center; /* Centrar los enlaces */
 }
