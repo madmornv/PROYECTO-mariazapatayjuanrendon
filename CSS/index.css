@@ -11,6 +11,7 @@ body {
     width: 100%;
     height: 5000px;
     background-image: url(../img.cards/adrien-olichon-ilVYjf0J378-unsplash.jpg);
+    font-size: 100px;
 }
 h1 {
     font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
@@ -25,7 +26,7 @@ p {
 
 .Header {
     width: 100% !important;
-    height: 4000px !important;
+    height: 3000px !important;
     overflow: hidden; 
     border: none;
     display: block;
